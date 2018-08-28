@@ -7,5 +7,6 @@ c = []
 # checking common words
 for i in b:
     if i in a:
-        c.append(i)
+        if i not in c:
+            c.append(i)
 print(c)
